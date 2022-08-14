@@ -1,0 +1,99 @@
+*{ /*O asterisco (*) serve para selecionar que são todas as tags do html*/
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+header{
+    background-color: #48c5ce;
+    text-align: center;
+    color: white;  
+    padding: 10px; 
+
+}
+.title{
+    font-size: 26px;    
+}
+
+section{
+    padding: 20px;
+    background-image: url(/images/people.jpg);
+    background-size: cover;
+    overflow: hidden; /*vai fazer que com a imagem preencha tudo que tem que preencher*/
+}
+.formContainer{
+    max-width: 230px;
+    background-color: #FFFFFFBB;
+    padding: 20px;
+    float: right;
+}
+
+h2{
+    font-size: 16px;    
+}
+
+.marginBottom{
+    margin-bottom: 15px;
+}
+
+input, select{ /*aplica o style tanto ao input, quanto ao select*/
+    width: 100%;
+    box-sizing: border-box; /*alinha todas as caixas do formulário*/
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]{
+    color: white;
+    background-color: #48c5ce;
+    font-weight: bold; /*peso da fonte negrito*/
+}
+
+select{ /*aqui aplica o style somente para o select*/
+    -webkit-appearance: none; /*os 3 comandos tiram a "seta" de todos os navegadores*/
+    -moz-appearance: none;
+    appearance: none;
+
+    background-image: url(/images/arrow.jpg);
+    background-repeat: no-repeat;
+
+    background-position-x: calc(100% - 10px);
+    background-position-y: center;
+    
+}
+
+footer{
+    background-color: #464949;
+    padding: 40px;
+    text-align: center;
+}
+
+.picture{
+    width: 180px;
+}
+
+.description{
+    color: white;
+    display: inline-block;
+    text-align: left;
+    max-width: 40%; /*o texto foi para o lado após limitar o tamanho máximo (max-width)*/    
+    margin-left: 40px;
+}
+
+.description p, .description h3 {
+    margin-bottom: 20px;
+}
+
+.description h3{
+    font-size: 24px;
+}
